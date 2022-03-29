@@ -1,0 +1,69 @@
+:root {
+  --pale-violet: hsl(276, 100%, 81%);
+  --moderate-violet: hsl(276, 55%, 52%);
+  --desaturated-dark-violet: hsl(271, 15%, 43%);
+  --grayish-blue: hsl(206, 6%, 79%);
+  --very-dark-desaturated-violet: hsl(271, 36%, 24%);
+  --dark-grayish-violet: hsl(270, 7%, 64%);
+  --white: hsl(0, 0%, 100%);
+  --light-grayish-violet: hsl(270, 20%, 96%);
+  --very-dark-desaturated-violet: hsl(271, 36%, 24%);
+  --very-light-magenta: hsl(289, 100%, 72%);
+  --gradient-topo: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+  --gradient-chat: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  --gradient-fundo: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  --rubik: 'Rubik', sans-serif;
+}
+
+body {
+  font-family: var(--rubik);
+  font-size: 16px;
+  background-color: var(--light-grayish-violet);
+  color: var(--dark-grayish-violet);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.background__gradient {
+  background-image: var(--gradient-fundo);
+  height: 60vh;
+  width: 50%;
+  border-radius: 0 0 calc(50vh - 0%) 0;
+  z-index: -1;
+  position: absolute;
+  align-self: flex-start;
+}
+
+.background__pink {
+  background-image: var(--gradient-fundo);
+  height: 60vh;
+  width: 50%;
+  border-radius: calc(50vh - 0%) 0 0 0;
+  z-index: -1;
+  position: absolute;
+  align-self: flex-end;
+}
+
+.title {
+  font-size: 2.4rem;
+  color: var(--very-dark-desaturated-violet);
+  font-weight: 500;
+  margin: 3rem auto 1.5rem;
+}
+
+.paragraph {
+  text-align: center;
+  margin: 0 2rem;
+  line-height: 1.75rem;
+}
