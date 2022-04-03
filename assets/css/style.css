@@ -71,8 +71,8 @@ body {
 .cellphone__inside {
   background-color: var(--light-grayish-violet);
   border-radius: 20px;
-  margin: 0.65rem;
-  height: calc(510px - 1.3rem);
+  margin: 10px;
+  height: calc(510px - 21px);
   display: flex;
   font-size: 0.55rem;
   line-height: 0.75rem;
@@ -82,23 +82,43 @@ body {
   background-image: var(--gradient-topo);
   border-radius: 20px 20px 5px 5px;
   position: absolute;
-  height: 3rem;
-  width: 87.5%;
+  height: 45px;
+  width: calc(250px - 30px);
   padding: 15px 5px 5px 5px;
-  box-shadow: 10px 10px 30px var(--sombra-cellphone);
+  box-shadow: 20px 20px 30px var(--sombra-cellphone);
   color: var(--pale-violet);
+}
+
+.cellphone__topo--barra {
+  width: calc(250px - 118px);
+  margin: -17px 45px 0;
+  height: 20px;
+  border-radius: 0 0 15px 15px;
+  position: absolute;
+  z-index: 3;
+  background-color: var(--white);
+
 }
 
 .cellphone__user {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 18px 40px 140px 12px;
   grid-template-rows: 1fr 1fr;
+  margin-left: 3px;
+  margin-top: 15px;
 }
 
-.cellphone__user--back {
+.cellphone__user--icon--back {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  display: inline-block;
+  align-content: center;
+  color: var(--white);
+  margin-top: 8px;
   grid-column: 1;
   grid-row: 1 / span 2;
-  background-image: url(../icon/5401626871647100443.svg);
 }
 
 .cellphone__user--pic {
@@ -112,6 +132,7 @@ body {
   grid-column: 2;
   grid-row: 1 / span 2;
   align-content: center;
+  margin-left: 3px;
 }
 
 .cellphone__user--name {
@@ -127,10 +148,26 @@ body {
   grid-row: 2;
 }
 
-.cellphone__user--dots {
-  grid-column: 3;
-  grid-row: 2;
+.cellphone__user--icon--options {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  display: inline-block;
+  align-content: center;
+  color: hsl(0, 0%, 100%, 50%);
+  margin-top: 6px;
+  grid-column: 4;
+  grid-row: 1 / span 2;
 }
+
+.cellphone__talk {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 70px;
+}
+
 
 .footer {
   position: absolute;
