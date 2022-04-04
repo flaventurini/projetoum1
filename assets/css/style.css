@@ -13,6 +13,7 @@
   --gradient-chat: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
   --gradient-fundo: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
   --fundo-pink: hsl(276, 100%, 81%, 5%);
+  --fundo-pink-chat: hsl(276, 100%, 81%, 17%);
   --sombra-cellphone: hsl(270, 7%, 64%, 20%);
   --rubik: 'Rubik', sans-serif;
 }
@@ -166,6 +167,29 @@ body {
   flex-direction: column;
   position: relative;
   margin-top: 70px;
+  width: 100%;
+}
+
+.cellphone__talk--purple {
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  width: 110px;
+  background-color: var(--fundo-pink-chat);
+  color: var(--moderate-violet);
+  border-radius: 10px 10px 10px 5px;
+  align-self: flex-start;
+}
+
+.cellphone__talk--white {
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  width: 110px;
+  background-color: var(--white);
+  color: var(--desaturated-dark-violet);
+  border-radius: 10px 10px 5px 10px;
+  align-self: flex-end;
 }
 
 
