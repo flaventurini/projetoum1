@@ -192,6 +192,17 @@ body {
   align-self: flex-end;
 }
 
+.cellphone__talk--gradient {
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  width: 110px;
+  background-image: var(--gradient-chat);
+  color: var(--white);
+  border-radius: 10px 10px 10px 5px;
+  align-self: flex-start;
+}
+
 
 .footer {
   position: absolute;
