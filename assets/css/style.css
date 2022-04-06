@@ -168,6 +168,7 @@ body {
   position: relative;
   margin-top: 70px;
   width: 100%;
+  font-size: 0.9em;
 }
 
 .cellphone__talk--purple {
@@ -192,17 +193,98 @@ body {
   align-self: flex-end;
 }
 
+.cellphone__talk--pics {
+  margin-top: 0.5rem;
+  padding: 0 0.5rem;
+  width: 135px;
+  border-radius: 10px 10px 5px 10px;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cellphone__talk--dogs {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px 10px 10px 10px;
+  box-sizing: border-box;
+}
+
 .cellphone__talk--gradient {
   margin-left: 0.5rem;
   margin-top: 0.5rem;
   padding: 0.5rem 0.5rem;
-  width: 110px;
+  width: 140px;
   background-image: var(--gradient-chat);
-  color: var(--white);
+  color: hsl(0, 0%, 100%, 70%);
   border-radius: 10px 10px 10px 5px;
   align-self: flex-start;
+  display: flex;
+  align-items: center;
 }
 
+.cellphone__talk--gradient--circle {
+  font-family: 'Material Icons Outlined';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8em;
+  color: hsl(0, 0%, 100%, 70%);
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  margin-right: 5px;
+  justify-self: flex-start;
+}
+
+.cellphone__talk--gradient--text {
+  margin-left: 3px;
+  flex-grow: 2;
+}
+
+.cellphone__talk--gradient--price {
+  font-weight: 500;
+  font-size: 1.8em;
+  color: var(--white);
+  margin-right: 3px;
+}
+
+.cellphone__type {
+  margin: 5px 5px;
+  background-color: var(--white);
+  height: 35px;
+  width: 92%;
+  border-radius: 20px 20px 20px 20px;
+  margin-top: 10px;
+  align-self: center;
+  display: flex;
+}
+
+.cellphone__type--text {
+  align-self: center;
+  margin-left: 20px;
+  flex-grow: 2;
+}
+
+.cellphone__type--send {
+  font-family: 'Material Icons Outlined';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8em;
+  color: hsl(0, 0%, 100%, 70%);
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  margin-right: 5px;
+  justify-self: flex-start;
+}
 
 .footer {
   position: absolute;
