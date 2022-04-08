@@ -270,20 +270,24 @@ body {
 }
 
 .cellphone__type--send {
-  font-family: 'Material Icons Outlined';
+  font-family: 'Material Icons';
   font-style: normal;
   font-weight: normal;
-  font-size: 1.8em;
-  color: hsl(0, 0%, 100%, 70%);
+  font-size: 16px;
+  color: var(--white);
+  background-color: var(--very-dark-desaturated-violet);
+  border-radius: 100%;
   display: inline-block;
-  line-height: 1;
+  height: 30px;
+  width: 30px;
   text-transform: none;
   letter-spacing: normal;
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
-  margin-right: 5px;
-  justify-self: flex-start;
+  margin-right: 8px;
+  text-align: center;
+  align-self: center;
 }
 
 .footer {
