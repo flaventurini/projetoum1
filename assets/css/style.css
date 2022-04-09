@@ -32,29 +32,29 @@ body {
 }
 
 .background {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-column: 1fr 1fr;
+  grid-row: 1fr 1fr 1fr 1fr;
+  position: fixed;
   z-index: -2;
 }
 
 .background__gradient {
   background-image: var(--gradient-fundo);
-  height: 60vh;
-  width: 50%;
-  border-radius: 0 0 calc(50vh - 0%) 0;
+  height: 100%;
+  border-radius: 0 0 50vh 0;
   align-self: flex-start;
-  display: inline-block;
+  grid-column: 1;
+  grid-row: 1 / span 2;
 }
 
 .background__pink {
   background-color: var(--fundo-pink);
-  height: 60vh;
-  width: 50%;
-  border-radius: calc(50vh - 0%) 0 0 0;
-  display: inline-block;
-  align-self: flex-end;
+  border-radius: 50vh 0 0 0;
+  grid-column: 2;
+  grid-row: 2 / span 2;
 }
 
 .cellphone {
@@ -316,4 +316,32 @@ body {
   margin: 0 2rem 2rem;
   line-height: 1.75rem;
   z-index: 3;
+}
+
+/* MEDIA QUERYS */
+
+@media screen and (min-width: 1440px) {
+  .background {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    z-index: -2;
+  }
+
+  .background__gradient {
+    grid-column: 1;
+    grid-row: 1;
+    height: 60vh;
+    width: 500px;
+    border-radius: 0 0 50vh 50vh;
+  }
+  
+  .background__pink {
+    grid-column: 3;
+    grid-row: 1;
+    height: 60vh;
+    width: 500px;
+    border-radius: 50vh 50vh 0 0;
+    display: inline-block;
+    align-self: flex-end;
+  }
 }
