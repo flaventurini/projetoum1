@@ -294,6 +294,7 @@ body {
 .cellphone__type--icon {
   text-align: center;
   align-self: center;
+  margin: 1px 0 0 2px;
 }
 
 .footer {
